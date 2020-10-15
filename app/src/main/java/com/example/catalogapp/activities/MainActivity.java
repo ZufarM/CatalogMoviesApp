@@ -39,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
         viewModel = new ViewModelProvider(this).get(MostPopularTVShowsViewModel.class);
         tvShowsAdapter = new TVShowsAdapter(tvShows);
         activityMainBinding.tvShowRecyclerView.setAdapter(tvShowsAdapter);
+
         activityMainBinding.tvShowRecyclerView.addOnScrollListener(new RecyclerView.OnScrollListener() {
             @Override
             public void onScrolled(@NonNull RecyclerView recyclerView, int dx, int dy) {

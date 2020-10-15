@@ -1,7 +1,9 @@
 package com.example.catalogapp.adapters;
 
 import android.view.LayoutInflater;
+import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.databinding.DataBindingUtil;
@@ -37,6 +39,12 @@ public class TVShowsAdapter extends RecyclerView.Adapter<TVShowsAdapter.TVShowVi
     @Override
     public void onBindViewHolder(@NonNull TVShowViewHolder holder, int position) {
         holder.bindTVShow(tvShows.get(position));
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(v.getContext(), "ini "+tvShows.get(position).getName(), Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 
     @Override

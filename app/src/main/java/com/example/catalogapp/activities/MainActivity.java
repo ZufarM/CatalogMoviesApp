@@ -8,6 +8,9 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.provider.Settings;
+import android.view.View;
+import android.widget.ImageView;
 
 import com.example.catalogapp.R;
 import com.example.catalogapp.adapters.TVShowsAdapter;
@@ -32,6 +35,16 @@ public class MainActivity extends AppCompatActivity implements TVShowsListener {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         activityMainBinding = DataBindingUtil.setContentView(this, R.layout.activity_main);
+
+        ImageView btnLang = findViewById(R.id.change_language);
+        btnLang.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Settings.ACTION_LOCALE_SETTINGS);
+                startActivity(intent);
+            }
+        });
+
         doInitialization();
     }
 

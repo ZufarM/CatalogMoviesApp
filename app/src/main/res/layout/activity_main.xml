@@ -50,23 +50,13 @@
                 />
 
             <ImageView
-                android:id="@+id/imageWatchList"
+                android:id="@+id/change_language"
                 android:layout_width="@dimen/_24sdp"
                 android:layout_height="@dimen/_24sdp"
                 android:layout_marginEnd="@dimen/_8sdp"
                 android:contentDescription="@string/app_name"
                 android:padding="@dimen/_2sdp"
-                android:src="@drawable/ic_watchlist"
-                app:tint="@color/colorTextIcon"/>
-
-            <ImageView
-                android:id="@+id/imageSearch"
-                android:layout_width="@dimen/_24sdp"
-                android:layout_height="@dimen/_24sdp"
-                android:layout_marginEnd="@dimen/_8sdp"
-                android:contentDescription="@string/app_name"
-                android:padding="@dimen/_2sdp"
-                android:src="@drawable/ic_search"
+                android:src="@drawable/ic_language"
                 app:tint="@color/colorTextIcon"/>
 
         </LinearLayout>

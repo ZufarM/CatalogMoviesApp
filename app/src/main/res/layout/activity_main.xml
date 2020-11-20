@@ -44,7 +44,7 @@
                 android:fontFamily="@font/ubuntu_bold"
                 android:includeFontPadding="false"
                 android:maxLines="1"
-                android:text="@string/tv_shows_most_popular"
+                android:text="@string/tv_movies"
                 android:textColor="@color/colorTextIcon"
                 android:textSize="@dimen/_14ssp"
                 />

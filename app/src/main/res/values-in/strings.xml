@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Movie Ku</string>
+    <string name="tv_movies">Movies</string>
+    <string name="read_more">Baca Lebih Banyak</string>
+    <string name="read_less">Baca Lebih Sedikit</string>
+</resources>
